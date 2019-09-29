@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <body>
+        
+        <div class="title-div">
+            <h1>Random Password Generator</h1>
+                    </div>
+        
+        <br>
+            <br>
+        <h2>Feel free to add or remove possible characters for your new password in the text boxes below</h2>
+        <br>
+        
+        <div class="selections">
+			<form>
+				<div id="upper">
+					<input type="checkbox" checked><input type="text">
+					<span><a></a></span>
+                </div>
+                <br>
+				<div id="lower">
+					<input type="checkbox" checked><input type="text">
+                    <span><a></a></span>
+				</div>
+                <br>
+				<div id="number">
+					<input type="checkbox" checked><input type="text">
+					<span><a></a></span>
+                </div>
+                <br>
+				<div id="special">
+					<input type="checkbox" checked><input type="text">
+					<span><a></a></span>
+                </div> <!--end of the selections --->
+                
+                <br>
+                <br>
+                Your Password Length? <input id="length" type="text" value="42"><br/> <!-- feasibily from 1 to 99,999 without any brower lag -->
+                <br> 
+
+				<input type="submit" value="Generate" onclick="generatePassword(); return false;"> <!-- Here's our button to Gen the PW -->
+            </form>
+
+            <br>
+            <div class="PWarea" style='word-break: break-all; word-wrap: break-word;'> <!-- New PW will display in this area -->
+            <p id="display-password"></p>
+            </div>
+            
+            <br>
+            <footer class="footer">
+                    <div class="container2"> 
+                            <span>Highlight & Press Ctrl+C (Cmd+C for Mac) to copy your new password & Ctrl+V (Cmd+V for Mac) to paste your new password to its destination</span> <!-- You will not be able to see this text. -->
+                        </div>
+                    </div>
+                </footer>
+        <script src="./script.js"></script>    
+	</body>  
+
+
+
+
+
+
+
+
+
+
