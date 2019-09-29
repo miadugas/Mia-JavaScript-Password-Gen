@@ -63,3 +63,6 @@ function generatePassword(passwordLength) {
     var $display = document.getElementById('display-password');
     $display.textContent  = password;
 }
+
+            
+            
