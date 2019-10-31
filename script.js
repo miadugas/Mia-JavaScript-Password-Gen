@@ -54,15 +54,43 @@ function generatePassword(passwordLength) {
             charBlocks.push(value);
         }
     }
-    
+    //how long is the password that the user requesting?
     var $length = document.getElementById('length');
     var passwordLength = parseInt($length.value)
     
-
+// display password in the read
     var password = _generatePassword(passwordLength, charBlocks);
-    var $display = document.getElementById('display-password');
+    var $display = document.getElementById("display-password");
     $display.textContent  = password;
 }
 
-            
-            
+var elem = document.querySelector('input[type="range"]');
+
+//slider
+var rangeValue = function(){
+var newValue = elem.value;
+var target = document.querySelector('.value');
+target.innerHTML = newValue;
+}
+
+elem.addEventListener("input", rangeValue);
+
+//copy to clipboard
+function CopyToClipboard (containerid) {
+    // Create a new textarea element and give it id='temp_element'
+    var textarea = document.createElement('textarea')
+    textarea.id = 'temp_element'
+    // append it to the page body
+    document.body.appendChild(textarea)
+    // Give textarea a value of whatever inside the div of id=containerid
+    textarea.value = document.getElementById(containerid).innerText
+    // Now copy whatever inside the textarea to clipboard
+    var selector = document.querySelector('#temp_element')
+    selector.select()
+    document.execCommand('copy')
+    // Remove the textarea
+    document.body.removeChild(textarea)
+    //alert
+    alert("Copied the text: " + textarea.value);
+}
+

@@ -4,73 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" />
+
+<!-- google fonts link -->
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+<!-- font awesome link -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css" />
     <title>Random Password Generator</title>
 </head>
-<body>
-    <body>
-        
-        <div class="title-div">
-            <h1>Random Password Generator</h1>
-                    </div>
+<body id="page-top">
+<nav class="navbar navbar-dark">
+<!-- Navbar content -->
+    <a class="navbar-brand" style="color: white;" href="#page-top">Secure Password Generator</a>
+    <!-- Hamburger with menu items -->
+    <!-- <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav justify-content-center">
+                    <li class="nav-item"> Social Links
+                            <a class="fab fa-twitter" href="https://twitter.com/miainbatcountry" style="color: #55acee; padding: 10px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fab fa-facebook" href="https://www.facebook.com/miaelysedugas" style="color: #3b5998; padding: 10px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fab fa-github" href="https://github.com/miadugas" style="color: #444444; padding: 10px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fab fa-instagram" href="https://www.instagram.com/miainbatcountry/" style="color: #3f729b; padding: 10px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fab fa-linkedin" href="https://www.linkedin.com/in/miadugas/" style="color: #007bb6; padding: 10px;"></a>
+                    </li>
+                </ul>
+    </div> -->
+    <!-- guide for hamburger -->
+    <!-- <ul class="nav justify-content-center">
+        <li class="nav-item"> Social Links
+                <a class="fab fa-twitter" href="https://twitter.com/miainbatcountry" style="color: #55acee; padding: 10px;"></a>
+        </li>
+        <li class="nav-item">
+            <a class="fab fa-facebook" href="https://www.facebook.com/miaelysedugas" style="color: #3b5998; padding: 10px;"></a>
+        </li>
+        <li class="nav-item">
+            <a class="fab fa-github" href="https://github.com/miadugas" style="color: #444444; padding: 10px;"></a>
+        </li>
+        <li class="nav-item">
+            <a class="fab fa-instagram" href="https://www.instagram.com/miainbatcountry/" style="color: #3f729b; padding: 10px;"></a>
+        </li>
+        <li class="nav-item">
+            <a class="fab fa-linkedin" href="https://www.linkedin.com/in/miadugas/" style="color: #007bb6; padding: 10px;"></a>
+        </li>
+    </ul> -->
+</nav>
         
         <br>
             <br>
-        <h2>Feel free to add or remove possible characters for your new password in the text boxes below</h2>
-        <br>
+            <strong><h3>Feel free to add or remove possible characters for your new password in the text boxes below to make a custom password.</h3></strong>
         
+        <div class="divider-custom divider-dark">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+        </div>
+        <div class="div" style="text-align: center;">
+            <strong><h3>Choosing effective passwords</h3></strong>
+        
+            <a href="./assets/passwords.pdf" target="_blank">Need help deciding what is a good password?</a>
+        <br>
+        <a href="https://www.technologyreview.com/s/542576/youve-been-misled-about-what-makes-a-good-password/">MIT Technology Review: You’ve Been Misled About What Makes a Good Password</a>
+        </div>
+        <div class="divider-custom divider-dark">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+        </div>
+    
+        <div class="div" style="text-align: center;">
+                <strong><h3>Choose the elements of your password</h3></strong>
+        </div>
+        </div>
+        <br>
+    <div class="container choices">
         <div class="selections">
 			<form>
+                <div class="row">     
+                    <div class="col-lg-3">
+                            <i class="fas fa-fire" style="color:red "></i>
+                            <h2><strong>Fire</strong></h2>
+                        <img class="rounded-circle" src="./images/fire.png" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Include <strong>UPPERCASE</strong></h2>
 				<div id="upper">
-					<input type="checkbox" checked><input type="text">
+					<input type="checkbox" checked><input type="text" class="form-control">
 					<span><a></a></span>
                 </div>
-                <br>
+            </div><!-- /.col-lg-3 -->
+
+
+            <div class="col-lg-3">
+                    <i class="fas fa-water" style="color:blue "></i>
+                    <h2><strong>Water</strong></h2>
+                    <img class="rounded-circle" src="./images/water.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Include <strong>lowercase</strong></h2>
 				<div id="lower">
-					<input type="checkbox" checked><input type="text">
+					<input type="checkbox" checked><input type="text" class="form-control">
                     <span><a></a></span>
 				</div>
-                <br>
+            </div><!-- /.col-lg-3 -->
+
+            <div class="col-lg-3">
+                    <i class="fas fa-globe-americas" style="color:green "></i>
+                    <h2><strong>Earth</strong></h2>
+                    <img class="rounded-circle" src="./images/earth.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Include <strong>Numb3r5</strong></h2>
 				<div id="number">
-					<input type="checkbox" checked><input type="text">
+					<input type="checkbox" checked><input type="text" class="form-control">
 					<span><a></a></span>
                 </div>
-                <br>
+            </div><!-- /.col-lg-3 -->
+
+            <div class="col-lg-3">
+                    <i class="fas fa-feather-alt" style="color:purple "></i>
+                    <h2><strong>Air</strong></h2>
+                    <img class="rounded-circle" src="./images/air.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Include <strong>Speci@l$</strong></h2>
 				<div id="special">
-					<input type="checkbox" checked><input type="text">
+					<input type="checkbox" checked><input type="text" class="form-control">
 					<span><a></a></span>
                 </div> <!--end of the selections --->
-                
-                <br>
-                <br>
-                Your Password Length? <input id="length" type="text" value="42"><br/> <!-- feasibily from 1 to 99,999 without any brower lag -->
+            </div><!-- /.col-lg-3 -->
+        </div><!-- /.row --> 
+
+        <div class="divider-custom divider-dark">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+        </div>
+                <div class="pwl">
+                <span> Choose Your Password Length? </span>
+            </div>
+
+                <div class="value">8</div>
+                    <input id="length" type="range" min="8" max="128" step="1" value="8">
+
                 <br> 
 
-				<input type="submit" value="Generate" onclick="generatePassword(); return false;"> <!-- Here's our button to Gen the PW -->
+                <div class="button-div" style="text-align: center;">
+                <input class="btn btn-danger btn-lg active" role="button" type="submit" value="Generate New Password" onclick="generatePassword(); return false;">
+            </div>
             </form>
 
             <br>
-            <div class="PWarea" style='word-break: break-all; word-wrap: break-word;'> <!-- New PW will display in this area -->
-            <p id="display-password"></p>
+            <div class="container" id="container-div">
+                    <div class="PWarea" id="display-password">
             </div>
-            
-            <br>
-            <footer class="footer">
-                    <div class="container2" > 
-                            <span>Highlight & Press Ctrl+C (Cmd+C for Mac) to copy your new password & Ctrl+V (Cmd+V for Mac) to paste your new password to your destination.</span> <!-- You will not be able to see this text. -->
-                        </div>
-                    </div>
-                </footer>
-        <script src="./script.js"></script>    
-	</body>  
+        </div>
+        <br>
+        <div class="button-div" style="text-align: center;">
+        <button type="button" class="btn btn-outline-success btn-sm" onClick="CopyToClipboard('display-password')">Copy password to clipboard</button>
+            </div>
+        <br>
+    </div>
+</div>
+<div class="bottomText" style="text-align: center; font-style: italic; color: gray;">
+    <strong>Passwords are never stored</strong> 
+</div>
 
+<br>
+<br>
+    
+    <!-- Footer -->
+<footer class="page-footer font-small dark pt-4">
 
+<!-- Grid row -->
+<div class="footer-copyright text-center py-3">
+        <h5 class="text-uppercase" style="color: white;">Social</h5>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/miaelysedugas" >
+            <i class="fab fa-fw fa-facebook-f"></i></a>
+        
+            <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/miainbatcountry"><i class="fab fa-fw fa-twitter"></i>
+            </a>
 
+            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/miadugas" >
+            <i class="fab fa-fw fa-github"></i></a>
 
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.pinterest.com/miainbatcountry/"><i class="fab fa-fw fa-pinterest"></i></a>
 
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/miadugas/"><i class="fab fa-fw fa-linkedin-in"></i>
+            </a>
+        <!-- maybe not include Instagram -->
+        <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/miainbatcountry/"><i class="fab fa-fw fa-instagram"></i></a> -->
+        </div>
+        
+    </div>
+    <div class="footer-copyright text-center py-3" style="color: white;">
+            <span class="foot-text" text-muted>© 2019 Copyright:Mia Dugas. Some Rights Reserved. Made with <span
+                style="color:red "><i class="fas fa-xs fa-heart "></i></span></span>
+</div>
+</footer>
 
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>    
+</body>  
