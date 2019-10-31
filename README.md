@@ -9,5 +9,5 @@ This is an application that generates a random password based on user-selected c
  The application validates the user input and ensures that at least one character type is selected. The user also has the option to click a button to copy the password to their clipboard. The application is responsive, ensuring that it adapts to multiple screen sizes.
  
  
-![Image of JavaScript-Password-Generator](https://github.com/miadugas/Mia-JavaScript-Password-Gen/images/JavaScript PW-1.png)
+![Image of JavaScript-Password-Generator](https://github.com/miadugas/Mia-JavaScript-Password-Gen/blob/master/images/JavaScript%20PW-1.png)
 ![Image of JavaScript-Password-Generator](https://github.com/miadugas/Mia-JavaScript-Password-Gen/images/JavaScript PW-2.png)
