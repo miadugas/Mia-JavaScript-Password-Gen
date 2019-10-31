@@ -10,4 +10,5 @@ This is an application that generates a random password based on user-selected c
  
  
 ![Image of JavaScript-Password-Generator](https://github.com/miadugas/Mia-JavaScript-Password-Gen/blob/master/images/JavaScript%20PW-1.png)
+
 ![Image of JavaScript-Password-Generator](https://github.com/miadugas/Mia-JavaScript-Password-Gen/blob/master/images/JavaScriptPW-2.png)
